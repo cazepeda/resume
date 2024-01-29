@@ -1,0 +1,318 @@
+:root {
+    --step--2: clamp(0.6944rem, 0.6576rem + 0.1837vw, 0.8rem);
+    --step--1: clamp(0.8331rem, 0.7751rem + 0.2902vw, 1rem);
+    --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+    --step-1: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
+    --step-2: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
+    --step-3: clamp(1.7281rem, 1.4801rem + 1.2402vw, 2.4413rem);
+    --step-4: clamp(2.0738rem, 1.7335rem + 1.7011vw, 3.0519rem);
+
+    --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
+    --space-2xs: clamp(0.5rem, 0.4565rem + 0.2174vw, 0.625rem);
+    --space-xs: clamp(0.75rem, 0.6848rem + 0.3261vw, 0.9375rem);
+    --space-s: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+    --space-m: clamp(1.5rem, 1.3696rem + 0.6522vw, 1.875rem);
+    --space-l: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
+    --space-xl: clamp(3rem, 2.7391rem + 1.3043vw, 3.75rem);
+    --space-2xl: clamp(4rem, 3.6522rem + 1.7391vw, 5rem);
+    --space-3xl: clamp(6rem, 5.4783rem + 2.6087vw, 7.5rem);
+
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.25rem, 0.1196rem + 0.6522vw, 0.625rem);
+    --space-2xs-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
+    --space-xs-s: clamp(0.75rem, 0.5761rem + 0.8696vw, 1.25rem);
+    --space-s-m: clamp(1rem, 0.6957rem + 1.5217vw, 1.875rem);
+    --space-m-l: clamp(1.5rem, 1.1522rem + 1.7391vw, 2.5rem);
+    --space-l-xl: clamp(2rem, 1.3913rem + 3.0435vw, 3.75rem);
+    --space-xl-2xl: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
+    --space-2xl-3xl: clamp(4rem, 2.7826rem + 6.087vw, 7.5rem);
+
+    /* Custom pairs */
+    --space-s-l: clamp(1rem, 0.4783rem + 2.6087vw, 2.5rem);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Default margin */
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: var(--space-s) 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    font: 300 var(--step-0) / var(--space-l-xl) system-ui, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    line-height: var(--space-m-l);
+    margin: var(--space-s) 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+label {
+    line-height: var(--space-xl);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: var(--step-4);
+}
+
+h2 {
+    font-size: var(--step-3);
+}
+
+h3 {
+    font-size: var(--step-2);
+}
+
+h4 {
+    font-size: var(--step-1);
+}
+
+blockquote {
+    margin-block: var(--space-m);
+    padding-inline: var(--space-xl);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: #0000FF;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select,
+address {
+    font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* pre & code styles */
+code,
+pre {
+    color: #fff;
+    word-wrap: normal;
+    background: #000;
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    font-size: 1rem;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: var(--space-m-l);
+    overflow-wrap: normal;
+    -o-tab-size: 4;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+}
+
+pre {
+    border-radius: .3em;
+    margin: var(--space-s-l) 0;
+    max-width: calc(100vw - var(--space-s-l));
+    overflow: auto;
+    padding: var(--space-xs);
+}
+
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+/* data element */
+data:hover::after {
+    content: ' (VALUE ' attr(value) ')';
+    font-size: 0.7em;
+}
+
+/* del element */
+del {
+    text-decoration: line-through;
+    background-color: #fbb;
+    color: #555;
+}
+
+/* kbd element */
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.2),
+        0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+/* .content-grid */
+.content-grid {
+    --padding-inline: 1rem;
+    --content-max-width: 900px;
+    --breakout-max-width: 1200px;
+
+    --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+
+    display: grid;
+    grid-template-columns:
+        [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2),
+            var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+}
+
+.content-grid :not(.breakout, .full-width),
+.full-width> :not(.breakout, .full-width) {
+    grid-column: content;
+}
+
+.content-grid .breakout {
+    grid-column: breakout;
+}
+
+.content-grid .full-width {
+    grid-column: full-width;
+
+    display: grid;
+    grid-template-columns: inherit;
+}
+
+/* .content-grid */
+
+/* .header */
+.header {
+    text-align: right;
+    border-bottom: 2px solid #000;
+
+    &>* {
+        margin-block: var(--space-3xs);
+    }
+}
+
+/* .header */
+
+/* .article */
+.article dt {
+    font-size: var(--step-1);
+    font-weight: bold;
+}
+
+.article.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 0 5rem;
+
+    & h1 {
+        flex: 100%;
+    }
+
+    & dd {
+        margin-block: var(--space-3xs);
+        display: list-item;
+        list-style-position: inside;
+    }
+}
+
+.article.employment {
+    & dl {
+        margin-block-end: var(--space-l);
+
+        & dt:first-child {
+            color: #4D4D4D;
+            letter-spacing: .1rem;
+            font-weight: normal;
+        }
+
+        & dt:nth-of-type(2) {
+            font-size: var(--step-2);
+            margin-block: var(--space-3xs);
+        }
+
+        & dt:first-child,
+        & dt:last-of-type {
+            font-size: var(--step-0);
+        }
+
+        & dt:last-of-type a {
+            color: #005B96;
+        }
+
+        & dd {
+            margin-block: var(--space-2xs);
+            display: list-item;
+            margin-inline-start: var(--space-s);
+        }
+    }
+}
+
+/* .article */
+
+/* .footer */
+.footer {
+    border-top: 2px solid #000;
+
+    & dl>* {
+        margin-block: var(--space-3xs);
+    }
+}
+
+/* .footer */
