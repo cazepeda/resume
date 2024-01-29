@@ -1,0 +1,76 @@
+/* DEFAULT PROPERTIES
+-----------------------*/
+* { margin: 0; padding: 0; text-decoration: none; list-style: none; }
+
+body {
+  font-size: 1em; font-family: 'Gill Sans', Futura, 'Century Gothic', AppleGothic, sans-serif; line-height: 130%; text-align: left; background: #000; color: #2D2A33;
+  }
+  
+dl { margin: 5px 0 25px; line-height: 120%; }
+dt { padding: 2px 5px; background: #AAA; color: #000; }
+dd { padding: 5px 10px; background: #CCC; }
+
+h1, h2, h3 { padding: 10px 0 15px; color: #FFF; }
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+a { color: #668576; }
+a:hover { color: #32254C; text-decoration: underline; }
+
+/* WRAPPER PROPERTIES
+-----------------------*/
+#wrapper { width: 970px; margin: 20px auto 10px; position: static; }
+
+/* MASTHEAD PROPERTIES
+------------------------*/
+#masthead { width: 100%; position: static; border: none; margin: 0; padding: 0; background: none; color: #FFF; }
+#masthead h1 { font-size: 3em; padding: 10px 0 15px; }
+#masthead blockquote { margin: -8px 0 5px 8px; }
+#masthead address { margin: 0; padding: 0 8px; background: #666; color: #DDD; font-weight: normal; letter-spacing: normal; }
+#masthead dl { padding: 5px 0 0; line-height: 120%; border: none; background: none; }
+#masthead dt { width: auto; margin: 0; padding: 0 5px; float: none; font-weight: normal; }
+#masthead dd { padding: 2px 10px; color: #000; }
+#masthead dd a { color: #668576; }
+#masthead dd a:hover { color: #32254C; text-decoration: underline; }
+
+/* EMPLOYMENT PROPERTIES
+--------------------------*/
+#employment { width: 60%; float: left; margin: 0 15px 0 0; padding: 0; border: none; background: none; color: #000; }
+#employment h2 { margin: 0; padding: 10px 0 15px; background: none; }
+#employment dl { padding: 0; overflow: auto; border-bottom: none; background: none; }
+#employment dt { width: auto; float: none; clear: none; padding: 2px 5px; background: #AAA; color: #000; }
+#employment dd { width: auto; float: none; padding: 5px 10px; margin: 0; background: #CCC; }
+#employment dd:hover { background: none; color: #000; }
+#employment dd a { color: #668576; }
+#employment dd a:hover { color: #32254C; }
+
+/* EDUCATION PROPERTIES
+-------------------------*/
+#education { width: 38%; float: right; margin: 0; padding: 0; position: static; border: none; background: none; color: #000; }
+#education dl { margin: 5px 0 25px; padding: 0; border: none; background: none; }
+#education dt { background: #333; color: #888; font-size: 1em; font-weight: normal; margin: 0; }
+#education dd { background: #555; color: #FFF; line-height: 130%; }
+
+/* COMPUTERSKILLS PROPERTIES
+------------------------------*/
+#computerSkills { width: 38%; float: right; margin: 0 0 20px; padding: 0; position: static; border: none; background: none; color: #FFF; }
+#computerSkills ul { margin: 0; padding: 0 0 10px 10px; background: #333; color: #888; }
+#computerSkills ul li h3 { margin: 0 0 -10px; }
+#computerSkills ul li:first-child { padding: 0; }
+#computerSkills ul li:first-child:hover { padding: 0; background: none; color: #FFF; }
+#computerSkills ul li { list-style: none; padding: 0; }
+#computerSkills ul li:hover { border: none; background: none; color: #888; }
+
+/* OTHERSKILLS & INTERESTS PROPERTIES
+---------------------------*/
+#otherSkills { width: 38%; float: right; margin: 0 0 10px; padding: 0; position: static; border: none; background: none; color: #FFF; }
+#otherSkills p { padding: 2px 10px; background: #333; color: #888; }
+
+#interests { width: 38%; float: right; margin: 0 -3px 10px 0; padding: 0; position: static; border: none; background: none; color: #FFF; }
+#interests p { padding: 2px 10px; background: #333; color: #888; }
+  
+/* TOPLINK PROPERTIES
+-----------------------*/
+.topLink { text-align: center; padding: 0 0 20px; clear: both; }
+.topLink a { color: #FFF; }

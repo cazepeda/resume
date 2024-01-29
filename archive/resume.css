@@ -1,0 +1,191 @@
+* { margin: 0; padding: 0; text-decoration: none; }
+
+body {
+  font-size: 1em; font-family: 'Gill Sans', Futura, 'Century Gothic', AppleGothic, sans-serif; line-height: 150%;
+  background: #FFF;
+  }
+
+/* MISC PROPERTIES
+-------------------*/
+p.topLink {
+  text-align: center; position: fixed; bottom: 0;
+  width: 100%; display: block;
+  background: rgba(000, 000, 000, .8);
+  }
+p.topLink:hover { background: #333; }
+p.topLink a { color: #FFF; display: block; }
+
+#wrapper {
+  width: 970px; margin: 20px auto;
+  position: relative;
+  }
+
+.shadow {
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  }
+
+/* MASTHEAD PROPERTIES
+------------------------*/
+#masthead {
+  width: 39%; margin: 20px 0 0 0; padding: 8px; 
+  position: absolute; top: -14.5em; left: 0em;
+  border: 1px solid #000; border-radius-topright: 10px; boder-radius-bottomleft: 10px;
+  -moz-border-radius-topright: 10px; -moz-border-radius-bottomleft: 10px;
+  -webkit-border-top-right-radius: 10px; -webkit-border-bottom-left-radius: 10px;
+  background: rgba(000, 000, 000, .9); color: #FFF;
+  }
+#masthead h1 {
+  font-size: 3em;
+  padding: 12px 0;
+  }
+#masthead blockquote {
+  margin: -5px 0 0 5px;
+  color: #AAA;
+  }
+#masthead address {
+  margin: 0 0 3px 5px;
+  color: #F71919; font-weight: bold; letter-spacing: 1px;
+  }
+#masthead dl {
+  padding: 5px 5px 9px; line-height: 155%;
+  border: 1px solid #222; border-radius-topright: 5px; boder-radius-bottomleft: 5px;
+  -moz-border-radius-topright: 5px; -moz-border-radius-bottomleft: 5px;
+  -webkit-border-top-right-radius: 10px; -webkit-border-bottom-left-radius: 10px;
+   background: rgba(444, 444, 444, .2);
+  }
+#masthead dt {
+  font-weight: bold;
+  float: left; margin: 0 10px 0 0;
+  }
+#masthead dd { color: #000; }
+#masthead dd a { color: #FF0; }
+#masthead dd a:hover { text-decoration: underline; }
+
+/* EDUCATION PROPERTIES
+------------------------*/
+#education {
+  width: 56.7%; margin: 20px 0 0 0; padding: 8px;
+  position: absolute; top: -14.5em; left: 25.3em;
+  border: 1px solid #222; border-radius-topleft: 10px; border-radius-bottomright: 10px;
+  -moz-border-radius-topleft: 10px; -moz-border-radius-bottomright: 10px;
+  -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px;
+  background: rgba(000, 000, 000, .9); color: #FFF;
+  }
+#education dl {
+  margin: 5px 0 0; padding: 1px 5px 5px;
+  border: 1px solid #000; border-radius: 5px;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px;
+   background: rgba(444, 444, 444, .2);
+  }
+#education dt {
+  font-size: 1.3em; font-weight: bold; color: #CBB99D;
+  margin: 3px 0 0 0;
+  }
+#education dd { line-height: 150%; }
+
+/* OTHERSKILLS PROPERTIES
+---------------------------*/
+#otherSkills {
+  width: 19.6%; padding: 8px;
+  position: absolute; top: -4.7em; left: 25.3em;
+  border: 1px solid #222; border-radius-topright: 10px; border-radius-bottomleft: 10px;
+  -moz-border-radius-topright: 10px; -moz-border-radius-bottomleft: 10px;
+  -webkit-border-top-right-radius: 10px; -webkit-border-bottom-left-radius: 10px;
+  background: rgba(000, 000, 000, .9); color: #FFF;
+  }
+
+/* INTERESTS PROPERTIES
+-------------------------*/
+#interests {
+  width: 34.2%; padding: 8px;
+  position: absolute; top: -4.7em; right: 0em;
+  border: 1px solid #222; border-radius-topleft: 10px; border-radius-bottomright: 10px;
+  -moz-border-radius-topleft: 10px; -moz-border-radius-bottomright: 10px;
+  -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px;
+  background: rgba(000, 000, 000, .9); color: #FFF;
+  }
+
+/* OBJECTIVE PROPERTIES
+------------------------*/
+#objective {
+  width: 31%; padding: 8px;
+  position: absolute; top: 0em; right: 0em;
+  background: #EEE;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  }
+#objective p {
+  line-height: 120%;
+  margin: .5em;
+  }
+
+/* COMPUTER SKILLS PROPERTIES
+-------------------------------*/
+#computerSkills {
+  width: 31%; padding: 8px;
+  position: absolute; top: 11.5em; right: 0em;
+  border: 1px solid #222; border-radius-topright: 10px; border-radius-bottomright: 10px;
+  -moz-border-radius-topright: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px;
+  -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px;
+  background: rgba(000, 000, 000, .9); color: #FFF;
+  }
+#computerSkills ul {
+  margin: 10px 0 0;
+  }
+#computerSkills ul li:first-child { padding: 0; }
+#computerSkills ul li:first-child:hover { padding: 0; background: none; color: #FFF; }
+#computerSkills ul li {
+  list-style: none;
+  padding: 0 5px;
+  }
+#computerSkills ul li:hover {
+  border-radius-topright: 3px; border-radius-bottomright: 3px;
+  -moz-border-radius-topright: 3px; -moz-border-radius-bottomright: 3px;
+  -webkit-border-top-right-radius: 3px; -webkit-border-bottom-right-radius: 3px;
+  background: #FFF; color: #000;
+  }
+
+/* EMPLOYMENT PROPERTIES
+--------------------------*/
+#employment {
+  margin: 14.5em 0 2em; padding: 8px; width: 64.4%;
+  border: 1px solid #666; border-radius-topleft: 10px; border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px;
+  -webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px;
+  background: #2C9A7F; color: #222;
+  }
+#employment h2 {
+  margin: 0 0 8px 0; padding: 3px 8px 5px;
+  border-radius-topleft: 5px; border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px;
+  background: rgba(000, 000, 000, .2); color: #FFF;
+  }
+#employment dl {
+  padding: 5px; overflow: auto;
+  border-bottom: 2px solid #2C9A7F;
+  background: #EED;
+  }
+#employment dt {
+  float: left;  clear: both; padding: 0 8px;
+  background: #CCC; color: #222;
+  }
+#employment dd {
+  float: left;
+  padding: 0 8px; margin: 0 0 1px 1px;
+  background: #DDD;
+  }
+#employment dd:hover { background: #000; color: #FFF; }
+#employment dd a { color: #0AA; }
+#employment dd a:hover { color: #FF0; }
+#employment dd:last-child {
+  margin: 2px 0 0px; padding: 8px 8px 30px;
+  border: 1px solid #666;;
+  background: #FFF; color: #000;
+  }
+#employment dd:last-child a { color: #960; }
+#employment dd:last-child a:hover { color: #069; }
+
